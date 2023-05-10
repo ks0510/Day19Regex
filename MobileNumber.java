@@ -25,12 +25,12 @@ public class MobileNumber {
 		
 		System.out.println("Enter mobile number");
 		
-		String phoneNumber = sc.next();
+		String phoneNumber = sc.nextLine().trim();
 		
 		/*
 		 * To define regex for mobile number  and matching mobile number with expression
 		 */
-		 Pattern pattern = Pattern.compile("[1-9]{1}[0-9]{1}[6-9]{1}[0-9]{9}");
+		 Pattern pattern = Pattern.compile("[1-9]{1}[0-9]{1} [6-9]{1}[0-9]{9}");
 		 
 		 Matcher matcher = pattern.matcher(phoneNumber);
 		 
